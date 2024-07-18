@@ -1,0 +1,15 @@
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\bin\Debug\net8.0\ShopFlex.Products.Infrastructure.deps.json
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\bin\Debug\net8.0\ShopFlex.Products.Infrastructure.dll
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\bin\Debug\net8.0\ShopFlex.Products.Infrastructure.pdb
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\obj\Debug\net8.0\ShopFlex.Products.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\obj\Debug\net8.0\ShopFlex.Products.Infrastructure.AssemblyInfoInputs.cache
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\obj\Debug\net8.0\ShopFlex.Products.Infrastructure.AssemblyInfo.cs
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\obj\Debug\net8.0\ShopFlex.Products.Infrastructure.csproj.CoreCompileInputs.cache
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\obj\Debug\net8.0\ShopFlex.Products.Infrastructure.dll
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\obj\Debug\net8.0\refint\ShopFlex.Products.Infrastructure.dll
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\obj\Debug\net8.0\ShopFlex.Products.Infrastructure.pdb
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\obj\Debug\net8.0\ref\ShopFlex.Products.Infrastructure.dll
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\bin\Debug\net8.0\ShopFlex.Products.Domain.dll
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\bin\Debug\net8.0\ShopFlex.Products.Domain.pdb
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\obj\Debug\net8.0\ShopFlex.Products.Infrastructure.csproj.AssemblyReference.cache
+D:\dev\dotnet\microservices\ShopFlex\ShopFlex.Products\ShopFlex.Products.Infrastructure\obj\Debug\net8.0\ShopFlex.Products.Infrastructure.csproj.CopyComplete

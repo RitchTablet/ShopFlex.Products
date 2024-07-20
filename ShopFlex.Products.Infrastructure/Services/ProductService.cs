@@ -17,7 +17,12 @@ namespace ShopFlex.Products.Infrastructure.Services
             _productRepository = productRepository;
         }
 
-        public async Task<List<Product>> GetProductsAsync()
+        public IEnumerable<dynamic> GetEntitiesTest()
+        {
+            return _productRepository.GetEntitiesTest();
+        }
+
+        public async Task<IEnumerable<Product>> GetProductsAsync()
         {
             return await _productRepository.GetAllAsync();
         }

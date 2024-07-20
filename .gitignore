@@ -1,0 +1,68 @@
+# Ignorar carpetas de construcción en todos los proyectos
+**/bin/
+**/obj/
+
+# Archivos generados por NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+*.nupkg
+
+# Archivos generados por herramientas de desarrollo
+*.suo
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Archivos de configuración de IDE
+.vscode/
+.idea/
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Archivos de log
+*.log
+*.tlog
+*.log.*.txt
+
+# Archivos de cobertura y pruebas
+*.coverage
+*.coveragexml
+
+# Archivos temporales y de respaldo
+*.bak
+*.tmp
+*.swp
+*~
+
+# Archivos de distribución y migraciones
+*.tar.gz
+*.zip
+Migrations/
+
+# Archivos específicos de entornos locales
+.env
+
+# Archivos de base de datos
+*.db
+
+# Archivos generados por Azure Pipelines
+azure-pipelines.yml
+
+# Archivos generados por compilación de TypeScript
+*.tsbuildinfo
+
+# Archivos generados por Python
+*.pyc
+
+# Archivos generados por .NET
+*.dll
+*.exe
+build/
+dist/
+node_modules/

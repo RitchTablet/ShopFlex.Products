@@ -1,5 +1,5 @@
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
 
@@ -9,6 +9,11 @@ namespace ShopFlex.Products.Infrastructure.Data
     {
         private readonly string _connectionString;
 
+        public DbConnectionFactory(string connectionString)
+        {
+            _connectionString = connectionString;
+        }
+        
         public DbConnectionFactory(IConfiguration configuration)
         {
             _connectionString = configuration.GetConnectionString("ShopFlexProductsConnection");
@@ -16,6 +21,7 @@ namespace ShopFlex.Products.Infrastructure.Data
 
         public IDbConnection CreateConnection()
         {
+            
             return new SqlConnection(_connectionString);
         }
     }

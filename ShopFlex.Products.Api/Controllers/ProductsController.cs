@@ -17,6 +17,13 @@ namespace ShopFlex.Products.Api.Controllers
             _productAppService = productAppService;
         }
 
+        [HttpGet("test")]
+        public IActionResult GetEntitiesTest()
+        {
+            var entities = _productAppService.GetEntitiesTest();
+            return Ok(entities);
+        }
+
         [HttpGet]
         public async Task<ActionResult<List<ProductDto>>> GetProducts()
         {

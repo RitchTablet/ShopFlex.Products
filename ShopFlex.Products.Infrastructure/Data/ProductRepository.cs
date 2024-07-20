@@ -2,6 +2,7 @@ using Dapper;
 using ShopFlex.Products.Domain.Entities;
 using ShopFlex.Products.Domain.Interfaces.Repositories;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace ShopFlex.Products.Infrastructure.Data
 {
@@ -9,25 +10,27 @@ namespace ShopFlex.Products.Infrastructure.Data
     {
 
         private readonly IDbConnection _dbConnection;
+        private readonly DbConnectionFactory _dbConnectionFactory;
 
         public ProductRepository(DbConnectionFactory connectionFactory)
         {
             _dbConnection = connectionFactory.CreateConnection();
+            _dbConnectionFactory = connectionFactory;
         }
 
-        public async Task<List<Product>> GetAllAsync()
+        public IEnumerable<dynamic> GetEntitiesTest()
         {
-                _dbConnection.Open();
-                var result = _dbConnection.ExecuteScalar<int>("SELECT 1");
-            // using (IDbConnection dbConnection = _dbConnection)
-            // {
-            //     dbConnection.Open();
-            //     var result = dbConnection.ExecuteScalar<int>("SELECT 1");
-            // }
+            string sql = "SELECT Id, Name, Price FROM Products;";
+            var data = _dbConnection.Query<Product>(sql);
+            var users = _dbConnection.Query("SELECT * FROM Products;");
+            return users;         
+        }
 
-            string sql = "SELECT Id, Name, Price FROM Products";
-            var data = await _dbConnection.QueryAsync<Product>(sql);
-            return (data).AsList();
+        public async Task<IEnumerable<Product>> GetAllAsync()
+        {
+            string sql = "SELECT Id, Name, Price FROM Products;";
+            var products = await _dbConnection.QueryAsync<Product>(sql);
+            return products;
         }
 
         public async Task<Product> GetByIdAsync(int id)
@@ -57,5 +60,11 @@ namespace ShopFlex.Products.Infrastructure.Data
             var rowsAffected = await _dbConnection.ExecuteAsync(sql, new { Id = id });
             return rowsAffected > 0;
         }
+    }
+
+    public class Test
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }

@@ -13,6 +13,11 @@ namespace ShopFlex.Products.Application.Services
             _productService = productService ?? throw new ArgumentNullException(nameof(productService));
         }
 
+        public IEnumerable<dynamic> GetEntitiesTest()
+        {
+            return _productService.GetEntitiesTest();
+        }
+
         public async Task<List<ProductDto>> GetProductsAsync()
         {
             try
@@ -89,7 +94,7 @@ namespace ShopFlex.Products.Application.Services
             };
         }
 
-        private List<ProductDto> MapToDto(List<Product> products)
+        private List<ProductDto> MapToDto(IEnumerable<Product> products)
         {
             var productDtos = new List<ProductDto>();
 
